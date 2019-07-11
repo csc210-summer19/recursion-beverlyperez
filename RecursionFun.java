@@ -45,10 +45,10 @@ public class RecursionFun {
 		int endLoops = leng / 3;
 		int loops = 0;
 		String empt = num.substring(leng - 3, leng);
-		return intWithComHelp(n, num, empt, 0, leng, endLoops, loops);
+		return intWithComHelp(num, empt, leng, endLoops, loops);
 	}
 
-	private String intWithComHelp(int n, String num, String empt, int i, int leng, int endLoops, int loops) {
+	private String intWithComHelp(String num, String empt, int leng, int endLoops, int loops) {
 		if (loops == endLoops) {
 
 			empt = num.substring(0, leng) + empt;
@@ -61,7 +61,7 @@ public class RecursionFun {
 			empt = "," + num.substring(leng - 3, leng) + empt;
 		}
 
-		return intWithComHelp(n, num, empt, i, leng - 3, endLoops, loops + 1);
+		return intWithComHelp(num, empt, leng - 3, endLoops, loops + 1);
 	}
 
 	// Write recursive method reverseArray that reverses the array elements in a
