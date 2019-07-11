@@ -109,8 +109,8 @@ public class RecursionFunTest {
   @Test
   public void testIssorted() {
     assertTrue(rf.isSorted(new int[] { 1, 2, 3 }));
-    assertTrue(rf.isSorted(new int[] { 2, 2, 2 }));
-    assertTrue(rf.isSorted(new int[] { 1 }));
+		assertTrue(rf.isSorted(new int[] { 2, 2, 2 }));
+	    assertTrue(rf.isSorted(new int[] { 1 }));
     assertTrue(rf.isSorted(new int[] {}));
     assertFalse(rf.isSorted(new int[] { 2, 1 }));
     assertFalse(rf.isSorted(new int[] { 2, 3, 4, 5, 4 }));
@@ -167,7 +167,7 @@ public class RecursionFunTest {
     intList.removeAll(3);
       
     assertEquals((Integer)5, intList.get(0));
-    assertEquals((Integer)2, intList.get(1));  
+    assertEquals((Integer)7, intList.get(1));  
   }
 
   @Test
